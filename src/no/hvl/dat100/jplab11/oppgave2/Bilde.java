@@ -8,25 +8,25 @@ public class Bilde extends Tekst {
 	
 	
 	public Bilde(int id, String bruker, String dato, String tekst, String url) {
-		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
+		this(id,bruker,dato,0,tekst,url);
 	}
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
-		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
+		super(id,bruker,dato,likes,tekst);
+		this.url=url;
 	}
 	
 	public String getUrl() {
-		throw new UnsupportedOperationException(TODO.method());
-
+		return url;
 	}
 
 	public void setUrl(String url) {
-		throw new UnsupportedOperationException(TODO.method());
+		this.url=url;
 	}
 
 	@Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method ());
+		return "BILDE"+super.toString().substring(5)+url+"\n";
 
 	}
 
