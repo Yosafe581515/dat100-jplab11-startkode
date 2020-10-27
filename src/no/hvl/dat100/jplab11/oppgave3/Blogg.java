@@ -4,15 +4,19 @@ import no.hvl.dat100.jplab11.common.TODO;
 import no.hvl.dat100.jplab11.oppgave1.*;
 
 public class Blogg {
-
-	// TODO: objektvariable 
-
+	
+	private Innlegg[] innleggtabell;
+	private int nesteledig=0 ;
+	
+	
 	public Blogg() {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+//		innleggtabell = new Innlegg [20];
+		this(20);
 	}
 
 	public Blogg(int lengde) {
-		throw new UnsupportedOperationException(TODO.constructor("Blogg"));
+		innleggtabell = new Innlegg [lengde];
+		
 	}
 
 	public int getAntall() {
