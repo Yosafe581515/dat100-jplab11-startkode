@@ -6,7 +6,7 @@ import no.hvl.dat100.jplab11.oppgave1.*;
 public class Blogg {
 	
 	private Innlegg[] innleggtabell;
-	private int nesteledig=0 ;
+	private int nesteledig;
 	
 	
 	public Blogg() {
@@ -16,21 +16,29 @@ public class Blogg {
 
 	public Blogg(int lengde) {
 		innleggtabell = new Innlegg [lengde];
+		nesteledig=0;
 		
 	}
 
 	public int getAntall() {
-		throw new UnsupportedOperationException(TODO.method());
+		return nesteledig;
 	}
 	
 	public Innlegg[] getSamling() {
-		throw new UnsupportedOperationException(TODO.method());
-
+		
+		return innleggtabell;
 	}
-	
+		
 	public int finnInnlegg(Innlegg innlegg) {
-
-		throw new UnsupportedOperationException(TODO.method());
+		boolean funnet=false;
+		int pos=0;
+		while(pos<nesteledig && !funnet)
+			if(erLik(Innlegg innlegg))
+		
+		
+		
+		
+		return pos;
 	}
 
 	public boolean finnes(Innlegg innlegg) {
